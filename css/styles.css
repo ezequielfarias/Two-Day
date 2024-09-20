@@ -1,7 +1,16 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 body {
   padding-bottom: 500px;
+}
+
+.menu1 {
+  background-color: aqua;
+  border-radius: 100px;
+  border-bottom: solid rgb(0, 0, 0) 10px;
+  padding-right: 50px;
+  
 }
