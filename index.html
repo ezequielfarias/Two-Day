@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,32 @@
   <link rel="icon" href="#" type="icon">
   <title>Two Day</title>
 </head>
+
 <body>
   <header>
-    
-    <nav class="navbar">
-        <div class="logo">Two Day</div>
-        <main>
-          <section class="search-section">
-            <input type="text" name="search" placeholder="Digite sua pesquisa" class="search-input">
-            <button onclick="pesquisar()" class="search-button">Pesquisar</button>
-          </section>
-        </main>
-        
-        <ul class="nav-links">
-            <li style="border-bottom: solid black 1px;"><a href="#">Home</a></li>
-            <li style="border-bottom: solid black 1px;"><a href="#">Sobre</a></li>
-            <li style="border-bottom: solid black 1px;"><a href="#">Contato</a></li>
-            
-        </ul>
 
+    <nav class="navbar">
+      <div class="logo">Two Day</div>
+      <main>
+        <section>
+          <input type="text" placeholder="Digite sua pesquisa" id="campo-pesquisa">
+          <button onclick="pesquisar()">Pesquisar</button>
+
+      </main>
+      <ul class="nav-links">
+        <li style="border-bottom: solid black 1.6px;"><a href="#">Home</a></li>
+        <li style="border-bottom: solid black 1.6px;"><a href="#">Sobre</a></li>
+        <li style="border-bottom: solid black 1.6px;"><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+    </section>
+
+    <section class="resultados-pesquisa" id="resultados-pesquisa">
+
+    </section>
+  </header>
+  <script src="./dados.js"></script>
+  <script src="./app.js"></script>
 </body>
+<footer>Ⓒ 2024 Todos Direitos Reservados</footer>
 </html>
