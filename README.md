@@ -6,5 +6,6 @@
 
 - Projeto inicializado e feito as modificações como colocar Header e links para outras páginas
 e barra de pesquisa conforme a imagem abaixo.
+![WhatsApp Image 2024-09-22 at 21 46 12](https://github.com/user-attachments/assets/fa015378-1520-4cdd-828e-7e948d1389dd)
 
 
