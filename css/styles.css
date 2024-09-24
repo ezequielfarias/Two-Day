@@ -274,6 +274,34 @@ footer {
     /* Tamanho da fonte dos títulos em telas pequenas */
   }
 
+  .video-player {
+    width: 100%; /* Ajusta a largura para preencher o container */
+    max-width: 600px; /* Limita a largura máxima do vídeo */
+    height: auto; /* Mantém a proporção do vídeo */
+    border-radius: 10px; /* Arredonda os cantos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
+    display: block;
+    margin-left: 0; /* Alinha o vídeo à esquerda */
+}
+
+.controls {
+    margin-top: 10px;
+    text-align: left; /* Alinha os botões à esquerda */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
 
 
 }
