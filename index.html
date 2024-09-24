@@ -7,6 +7,38 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="icon" href="./src/img/logo.jpeg" type="icon">
   <title>Two Day</title>
+
+  <style>
+    .video {
+      display: flex;
+     
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    #video {
+      width: 600px;
+      height: auto;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    #playPauseBtn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      
+      
+    }
+
+    #playPauseBtn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -28,8 +60,28 @@
     </nav>
   </header>
   <br>
-  <video class="video-player" id="video" src="./src/media/EU SOU DEV JR 🎵.mp4" autoplay playsinline></video>
+  <div class="video">
+    <video style="height:400px; padding:50px; border-radius: 50px;" id="video" src="./src/media/EU SOU DEV JR 🎵.mp4"
+      autoplay playsinline>
+    </video>
+    <button  id="playPauseBtn" onclick="togglePlayPause()">Play</button>
 
+  </div>
+  
+
+  <script>
+    function togglePlayPause() {
+      var video = document.getElementById("video");
+      var button = document.getElementById("playPauseBtn");
+      if (video.paused) {
+        video.play();
+        button.textContent = "Pause";
+      } else {
+        video.pause();
+        button.textContent = "Play";
+      }
+    }
+  </script>
 
 
   <script src="./script.js"></script>
