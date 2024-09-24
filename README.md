@@ -7,7 +7,10 @@
 - Projeto inicializado e feito as modificações como colocar Header e links para outras páginas
 e barra de pesquisa conforme a imagem abaixo.
 
-![WhatsApp Image 2024-09-22 at 21 46 12](https://github.com/user-attachments/assets/fa015378-1520-4cdd-828e-7e948d1389dd)
+
+https://github.com/user-attachments/assets/b3244859-253f-4282-a92e-c1e7770f4b28
+
+
 
   - 23/09 -Fazendo a estilização na pagina home.
 https://github.com/user-attachments/assets/12048f86-0e33-4e71-9c1c-6cee9b786905
