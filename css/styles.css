@@ -8,12 +8,13 @@
 
 /* Corpo da página */
 body {
+  padding-bottom: 500px;
   background-image: url(/src/img/fundo.png);
   color: #333;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  padding-inline: 0;
+
 }
 
 /* Estilo da navbar */
