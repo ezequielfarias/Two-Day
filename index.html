@@ -9,48 +9,68 @@
   <title>Two Day</title>
 
   <style>
-    .video {
+    .container {
       display: flex;
-     
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+
+    .video-container {
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      margin-bottom: 10px;
+      flex: 1;
+      padding-right: 20px;
     }
 
     #video {
-      width: 600px;
-      height: auto;
+      width: 650px;
+      height: 700px;
       max-width: 100%;
       border-radius: 8px;
+      margin: 0;
     }
 
     #playPauseBtn {
+      margin-top: 20px;
       padding: 10px 20px;
       background-color: #007bff;
       color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      
-      
-    }
+      margin: 0;
+      }
 
     #playPauseBtn:hover {
       background-color: #0056b3;
     }
-  </style>
 
+    .typing-effect {
+      flex: 1;
+      font-size: 1.5rem;
+      color: #f0f0f0; /* Cor mais clara para o texto */
+      white-space: pre-wrap;
+      border-left: 3px solid #007bff;
+      padding-left: 15px;
+    }
+
+    .hidden {
+      visibility: hidden;
+    }
+  </style>
 </head>
 
 <body>
   <header>
-
     <nav class="navbar">
       <div class="logo">Two Day</div>
       <main>
         <section>
           <input type="text" placeholder="Digite sua pesquisa" id="campo-pesquisa">
           <button onclick="pesquisar()">Pesquisar</button>
-
+        </section>
       </main>
       <ul class="nav-links">
         <li style="border-bottom: solid black 1.6px;"><a href="#">Home</a></li>
@@ -60,14 +80,17 @@
     </nav>
   </header>
   <br>
-  <div class="video">
-    <video style="height:400px; padding:50px; border-radius: 50px;" id="video" src="./src/media/EU SOU DEV JR 🎵.mp4"
-      autoplay playsinline>
-    </video>
-    <button  id="playPauseBtn" onclick="togglePlayPause()">Play</button>
 
+  <div class="container">
+    <div class="video-container">
+      <video style="height:400px; padding:50px; border-radius: 50px;" id="video" src="./src/media/EU SOU DEV JR 🎵.mp4"
+        autoplay playsinline>
+      </video>
+      <button id="playPauseBtn" onclick="togglePlayPause()">Play</button>
+    </div>
+
+    <div class="typing-effect" id="typing-text"></div>
   </div>
-  
 
   <script>
     function togglePlayPause() {
@@ -81,8 +104,23 @@
         button.textContent = "Play";
       }
     }
-  </script>
 
+    const text = "A programação é uma jornada desafiadora, mas recompensadora. Cada linha de código escrita é um passo mais perto de construir algo incrível. Continue aprendendo, continue evoluindo. O futuro está nas suas mãos! 💻✨";
+    let index = 0;
+    const typingSpeed = 90;
+
+    function typeText() {
+      if (index < text.length) {
+        document.getElementById("typing-text").textContent += text.charAt(index);
+        index++;
+        setTimeout(typeText, typingSpeed);
+      }
+    }
+
+    window.onload = function () {
+      setTimeout(typeText, 500); // Começa o efeito de digitação após meio segundo
+    };
+  </script>
 
   <script src="./script.js"></script>
   <script src="./app.js"></script>

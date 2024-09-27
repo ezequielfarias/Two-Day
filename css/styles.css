@@ -118,7 +118,8 @@ section button {
   /* Tamanho da fonte */
   cursor: pointer;
   /* Muda o cursor para indicar que é clicável */
-
+  margin: 0;
+  
 }
 
 /* Adiciona efeito hover ao botão de pesquisa */
