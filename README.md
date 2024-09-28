@@ -17,5 +17,10 @@ https://github.com/user-attachments/assets/12048f86-0e33-4e71-9c1c-6cee9b786905
 
 
 - proxima alteração é colocar texto e titulo no <span> para ter o efeito de digitado.
+![Captura de tela 2024-09-28 201915](https://github.com/user-attachments/assets/ddc7abb3-c7ab-4bbd-a589-717d1d56e28b)
+
+
+-Criado pagina sobre 
+![Captura de tela 2024-09-28 201808](https://github.com/user-attachments/assets/d505d36f-2c72-4b89-ad94-3f8d08947568)
 
 
