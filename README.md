@@ -27,4 +27,6 @@ https://github.com/user-attachments/assets/12048f86-0e33-4e71-9c1c-6cee9b786905
 
 - Colocando musica no fundo para motivar.
 
+- Feito a pagina de Trabalhe conosco
+![Captura de tela 2024-10-03 171026](https://github.com/user-attachments/assets/aacf4bfe-813d-42d0-91ac-95649673ba2c)
 
